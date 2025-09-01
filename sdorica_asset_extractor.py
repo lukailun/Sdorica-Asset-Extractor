@@ -40,8 +40,8 @@ def extract_assets_from_bundle(bundle_path, output_path):
                     # Get the name from the object or use a default
                     name = getattr(data, 'name', None) or getattr(data, 'm_Name', None) or f"asset_{obj.path_id}"
                     
-                    # # Only process assets with names containing "figure" or containing "AVG_background" or "loading_back"
-                    if not ('figure' in name) and not ('AVG_background' in name) and not ('loading_back' in name):
+                    # # Only process assets with names ending in "figure" or containing "AVG_background" or "loading_back"
+                    if not name.endswith('figure') and not ('AVG_background' in name) and not ('loading_back' in name):
                         continue
                     
                     # Add bundle name prefix to avoid conflicts
