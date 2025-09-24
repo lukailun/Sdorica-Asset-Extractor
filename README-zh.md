@@ -2,6 +2,10 @@
 
 一个用于从 Unity Asset Bundle (.ab) 文件中提取资源的 Python 工具，专为 Sdorica 游戏资源设计。此提取器专注于角色立绘资源，支持单文件和批量处理。
 
+## 资源路径
+
+Android/data/com.ilongyuan.sdorica.longyuan/files/AssetBundles
+
 ## 功能特性
 
 - **智能资源过滤**：自动提取名称以 "figure" 结尾的资源
